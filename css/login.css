@@ -1,0 +1,142 @@
+body {
+    width: 75%;
+    margin: 0 auto;
+    padding: 0;
+
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+:root {
+    --ruler: 16px;
+    --color-red: #AE1100;
+    --color-shadow: #000;
+    --color-white: #FFF;
+}
+
+.head {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.container {
+    max-width: 100%;
+    margin: 0 auto;
+    margin-top: 1%;
+}
+
+.page {
+    width: 80%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin: 0 auto;
+}
+
+.logo {
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+body,
+p,
+input,
+select,
+textarea,
+button {
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: -0.2px;
+    font-size: var(--ruler);
+}
+
+div,
+p {
+    color: var(--color-shadow);
+    text-shadow: 1px 1px 1px var(--color-white);
+}
+
+
+form {
+    padding: var(--ruler);
+    width: 50%;
+    margin: 0 auto;
+}
+
+.segment {
+    padding: var(--ruler)*2 0;
+    text-align: center;
+}
+
+button,
+input {
+    border: 0;
+    outline: 0;
+    font-size: var(--ruler);
+    border-radius: var(--ruler)*20;
+    padding: var(--ruler);
+    text-shadow: 1px 1px 0 var(--color-white);
+}
+
+label {
+    display: block;
+    margin-bottom: var(--ruler)*1.5;
+    width: 100%;
+}
+
+input {
+    margin-right: var(--ruler)/2;
+    box-shadow: inset 2px 2px 5px var(--color-shadow), inset -5px -5px 10px var(--color-white);
+    width: 100%;
+    box-sizing: border-box;
+    transition: all 0.2s ease-in-out;
+    appearance: none;
+    -webkit-appearance: none;
+}
+
+input:focus {
+    box-shadow: inset 1px 1px 2px var(--color-shadow), inset -1px -1px 2px var(--color-white);
+}
+
+button {
+    color: #61677C;
+    font-weight: bold;
+    box-shadow: -5px -5px 20px var(--color-white), 5px 5px 20px var(--color-shadow);
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+    font-weight: 600;
+
+
+}
+
+button:hover {
+    box-shadow: -2px -2px 5px var(--color-white), 2px 2px 5px var(--color-shadow);
+}
+
+button:active {
+    box-shadow: inset 1px 1px 2px var(--color-shadow), inset -1px -1px 2px var(--color-white);
+}
+
+.icon {
+    margin-right: var(--ruler)/2;
+}
+
+.icon {
+    margin-right: 0;
+}
+
+.red {
+    background-color: #fff;
+    font-size: 18px;
+    display: block;
+    width: 100%;
+    margin-top: 3%;
+    color: var(--color-red);
+}
+
+label {
+    margin-bottom: 4%;
+}
+

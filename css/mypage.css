@@ -1,0 +1,262 @@
+body {
+    width: 75%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+.container {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.head {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.page {
+    width: 80%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    display: flex;
+    margin: 0 auto;
+}
+
+.logo {
+    width: 70%;
+}
+
+.menu {
+    vertical-align: middle;
+}
+
+.menu:hover .menu__link:not(:hover) {
+    color: #fff;
+}
+
+.menu__list {
+    display: flex;
+    text-align: center;
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+.menu__group {
+    cursor: pointer;
+    line-height: 70px;
+    vertical-align: middle;
+}
+
+.menu__link {
+    padding: 0 1.5rem;
+    vertical-align: middle;
+    font-weight: 700;
+    color: #000;
+    text-transform: uppercase;
+}
+
+.menu__link {
+    position: relative;
+    overflow: hidden;
+    will-change: color;
+    transition: color .25s ease-out;
+}
+
+.menu__link::before,
+.menu__link::after {
+    content: "";
+    width: 0;
+    height: 3px;
+    background-color: #000;
+    will-change: width;
+    transition: width .1s ease-out;
+    position: absolute;
+    bottom: 0;
+}
+
+.menu__link::before {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.menu__link::after {
+    right: 50%;
+    transform: translateX(50%);
+}
+
+.menu__link:hover::before,
+.menu__link:hover::after {
+    width: 100%;
+    transition-duration: .2s;
+}
+
+.content {
+    width: 100%;
+}
+
+.content form {
+    width: 80%;
+    display: flex;
+    margin: 0 auto;
+}
+
+
+#wrap {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.input::before {
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 300px;
+}
+
+.input-header {
+    position: relative;
+    padding-top: 80px;
+    color: #fff;
+}
+
+.input-header h1 {
+    padding-bottom: 25px;
+    font-size: 3.25em;
+    font-weight: 100;
+}
+
+.input-content {
+    position: relative;
+    padding: 44px 55px;
+    background: #fff;
+    z-index: 10;
+}
+
+.input-content h2 {
+    padding-bottom: 45px;
+    font-size: 1.625em;
+    font-weight: bold;
+    vertical-align: middle;
+}
+
+.input-content h2 span {
+    display: inline-block;
+    margin-left: 10px;
+    padding: 5px 6px 3px;
+    border: 1px solid #ffca00;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    vertical-align: middle;
+    color: #ffca00;
+}
+
+.input-content .inputbox {
+    overflow: hidden;
+    position: relative;
+    padding: 15px 0 28px 0;
+}
+
+.input-content .inputbox-title {
+    position: absolute;
+    top: 15px;
+    left: 0;
+    width: 200px;
+    height: 30px;
+    color: #666;
+    font-weight: bold;
+    line-height: 30px;
+}
+
+.input-content .inputbox-content {
+    position: relative;
+    width: 100%;
+}
+
+.input-content .inputbox-content input {
+    width: 90%;
+    height: 30px;
+    box-sizing: border-box;
+    line-height: 30px;
+    font-size: 19px;
+    border: 0;
+    background: none;
+    border-bottom: 1px solid #ccc;
+    outline: none;
+    border-radius: 0;
+    -webkit-appearance: none;
+}
+
+.input-content .inputbox-content input:focus~label,
+.input-content .inputbox-content input:valid~label {
+    color: #2962ff;
+    transform: translateY(-20px);
+    font-size: 14px;
+    cursor: default;
+}
+
+.input-content .inputbox-content input:focus~.underline {
+    width: 100%;
+}
+
+.input-content .inputbox-content label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 30px;
+    line-height: 30px;
+    color: #ccc;
+    cursor: text;
+    transition: all 200ms ease-out;
+    z-index: 10;
+}
+
+.input-content .inputbox-content .underline {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #2962ff;
+    transition: all 200ms ease-out;
+}
+
+.input-content .btns {
+    width: 50%;
+    margin: 0 auto;
+    padding: 30px ;
+}
+
+.input-content .btns .btn {
+    display: inline-block;
+    padding: 10px 25px;
+    width: 49%;
+    background: none;
+    border: 1px solid #c0c0c0;
+    border-radius: 2px;
+    color: #666;
+    cursor: pointer;
+    font-size: 1.125em;
+    outline: none;
+    transition: all 100ms ease-out;
+    background: #2962ff;
+    color: #fff;
+}
+
+.input-content .btns .btn a {
+    color: #fff;
+}
+
+.input-content .btns .btn:hover,
+.input-content .btns .btn:focus {
+    transform: translateY(-3px);
+}
